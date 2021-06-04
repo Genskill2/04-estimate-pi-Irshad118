@@ -23,4 +23,14 @@ int main(void) {
     }
   }
 }
-
+float wallis_pi(int n) {
+float pi=2;
+float X;
+float Y;
+for (int i=1;i<=n;i++) {
+X=4*i*i;
+Y=X-1;
+pi *= X/Y;
+}
+return pi;
+}
